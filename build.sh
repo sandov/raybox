@@ -1,0 +1,1 @@
+gcc -o /code/build/output /code/src/*.c -Wall -std=c99 -D_DEFAULT_SOURCE -Wno-missing-braces -Wunused-result -O2 -D_DEFAULT_SOURCE -I. -I/raylib/src -I/raylib/src/external -I/usr/local/include -I/raylib/src/external/glfw/include -L. -L/raylib/src -L/raylib/src -L/usr/local/lib -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -latomic -DPLATFORM_DESKTOP

@@ -7,7 +7,13 @@ RUN git clone --depth 1 https://github.com/raysan5/raylib
 WORKDIR raylib/src
 RUN make PLATFORM=PLATFORM_DESKTOP
 RUN make install
+RUN mkdir /tools/
+COPY build.sh /tools/
+RUN chmod +x /tools/build.sh
 
-# Build examples:
-WORKDIR ../examples
-RUN make PLATFORM=PLATFORM_DESKTOP 
+### Build examples:
+
+# WORKDIR ../examples
+# RUN make PLATFORM=PLATFORM_DESKTOP 
+
+
