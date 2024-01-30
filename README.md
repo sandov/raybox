@@ -1,16 +1,14 @@
 # raybox: Raylib in a box
 
-Build code that uses raylib without installing raylib
+# Build code that uses raylib without installing raylib
 
-`docker build -t raybox .`
+## Instructions:
 
-`mkdir -p code/src`
-
-`mkdir -p code/build`
-
-copy your source code to code/
+Put your source code in code/src
 
 Then:
+
+`docker build -t raybox .`
 
 `docker run -v ./code:/code/ --name raybox-c1 raybox`
 
