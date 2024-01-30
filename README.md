@@ -1,6 +1,6 @@
 # raybox: Raylib in a box
 
-# Build code that uses raylib without installing raylib
+Build code that uses raylib without installing raylib
 
 ## Instructions:
 
