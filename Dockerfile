@@ -11,6 +11,8 @@ RUN mkdir /tools/
 COPY build.sh /tools/
 RUN chmod +x /tools/build.sh
 
+CMD /tools/build.sh
+
 ### Build examples:
 
 # WORKDIR ../examples

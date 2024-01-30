@@ -1,13 +1,18 @@
 # raybox: Raylib in a box
 
-Build raylib example projects without installing raylib
+Build code that uses raylib without installing raylib
 
 `docker build -t raybox .`
 
-`docker run --name raybox-c1 -it raybox /bin/bash`
+`mkdir -p code/src`
 
-on a different terminal:
+`mkdir -p code/build`
 
-`docker cp raybox-c1:/raylib/examples/core/core_2d_camera .`
+copy your source code to code/
 
-etc...
+Then:
+
+`docker run -v ./code:/code/ --name raybox-c1 raybox`
+
+The compiled program is in ./code/build/output
+
